@@ -1,0 +1,82 @@
+:root {
+  --text: #d7dce7;
+  --text-h: #ffffff;
+  --bg: #08111f;
+  --panel: #0e1729;
+  --bg-elevated: #13213b;
+  --border: rgba(148, 163, 184, 0.2);
+  --code-bg: #13213b;
+  --accent: #38bdf8;
+  --accent-bg: rgba(56, 189, 248, 0.15);
+  --accent-border: rgba(56, 189, 248, 0.35);
+  --shadow:
+    rgba(2, 6, 23, 0.5) 0 20px 40px -16px, rgba(15, 23, 42, 0.25) 0 8px 16px -8px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: min(1440px, 100%);
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 30%),
+    linear-gradient(180deg, #020617 0%, #08111f 100%);
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  letter-spacing: -1.68px;
+  margin: 16px 0;
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+p {
+  margin: 0;
+}
+
+code,
+button {
+  font-family: var(--mono);
+  border-radius: 4px;
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
