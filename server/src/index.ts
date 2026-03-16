@@ -49,22 +49,64 @@ interface GameState {
 
 const rounds: RoundSeed[] = [
   {
-    id: 'round-1',
-    title: '',
-    imageUrl: '/kcjug.avif',
-    actualLocation: { lat: 37.8199, lng: -122.4783 },
+    id: 'vigo-jug',
+    title: 'Vigo JUG',
+    imageUrl: '/1.jpg',
+    actualLocation: { lat:42.2406, lng:-8.7207 },
   },
   {
-    id: 'eiffel-tower',
-    title: 'Eiffel Tower',
-    imageUrl: '/eiffel-tower.png',
-    actualLocation: { lat: 48.8584, lng: 2.2945 },
+    id: 'helsinki-jug',
+    title: 'Helsinki Java User Group',
+    imageUrl: '/2.avif',
+    actualLocation: { lat:24.938379, lng:60.169857 },
   },
   {
-    id: 'tokyo-tower',
-    title: 'Tokyo Tower',
-    imageUrl: '/tokyo-tower.png',
-    actualLocation: { lat: 35.6586, lng: 139.7454 },
+    id: 'shenzhen-jug',
+    title: 'Shenzhen Java User Group',
+    imageUrl: '/3.png',
+    actualLocation: { lat:22.650874, lng:113.813546 },
+  },
+  {
+    id: 'morocco-jug',
+    title: 'Morocco Java User Group',
+    imageUrl: '/4.jpg',
+    actualLocation: { lat:34.020882, lng:-6.84165 },
+  },
+  {
+    id: 'jozi-jug',
+    title: 'Jozi JUG',
+    imageUrl: '/5.avis',
+    actualLocation: { lat:-28.3782721906973, lng:23.9137106762068 },
+  },
+  {
+    id: 'melbourne-java-jvm-users-group',
+    title: 'Melbourne Java JVM Users Group',
+    imageUrl: '/6.avif',
+    actualLocation: { lat:-37.897814, lng:145.00557125 },
+  },
+  {
+    id: 'peru-jug',
+    title: 'Peru/Lima Java User Group',
+    imageUrl: '/7.avif',
+    actualLocation: { lat:-12.070566, lng:-77.0304 },
+  },
+  {
+    id: 'bangalore-jug',
+    title: 'Bangalore Open Java Users Group',
+    imageUrl: '/8.avif',
+    actualLocation: { lat:12.96991, lng:77.59796 },
+  },
+  {
+    id: 'tc-jug',
+    title: 'Twin Cities Java User Group',
+    imageUrl: '/9.avif',
+    actualLocation: { lat:44.973723, lng:-93.257837 },
+  },
+  {
+    id: 'portland-jug',
+    title: 'Portland Java User Group',
+    imageUrl: '/10.avif',
+    actualLocation: { "lat":45.522452,"lng":-122.677968 },
   },
 ]
 
