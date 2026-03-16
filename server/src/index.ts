@@ -97,10 +97,10 @@ const rounds: RoundSeed[] = [
     actualLocation: { lat:12.96991, lng:77.59796 },
   },
   {
-    id: 'chicago-jug',
-    title: 'Chicago Java User Group',
-    imageUrl: '/9.avif',
-    actualLocation: { "lat":41.881832,"lng":-87.623177 },
+    id: 'tc-jug',
+    title: 'Twin Cities Java User Group',
+    imageUrl: '/9.png',
+    actualLocation: { lat:44.973723, lng:-93.257837 },
   },
   {
     id: 'portland-jug',
