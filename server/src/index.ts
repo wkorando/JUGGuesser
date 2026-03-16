@@ -99,7 +99,7 @@ const rounds: RoundSeed[] = [
   {
     id: 'tc-jug',
     title: 'Twin Cities Java User Group',
-    imageUrl: '/9.png',
+    imageUrl: '/9.avif',
     actualLocation: { lat:44.973723, lng:-93.257837 },
   },
   {
