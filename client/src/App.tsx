@@ -166,6 +166,14 @@ function App() {
     return winner === 'player1' ? 'Player 1' : 'Player 2'
   }
 
+  const showRoundTitle = Boolean(game?.round?.guesses.player1 && game?.round?.guesses.player2)
+
+  const roundHeading = game?.round
+    ? showRoundTitle
+      ? `${game.round.roundNumber} / ${game.round.totalRounds}: ${game.round.title}`
+      : `${game.round.roundNumber} / ${game.round.totalRounds}`
+    : 'Ready to start'
+
   return (
     <main className="app-shell">
       <section className="hero-panel">
@@ -205,11 +213,7 @@ function App() {
           <div className="panel-header">
             <div>
               <p className="panel-label">Current Round</p>
-              <h2>
-                {game?.round
-                  ? `${game.round.roundNumber} / ${game.round.totalRounds}: ${game.round.title}`
-                  : 'Ready to start'}
-              </h2>
+              <h2>{roundHeading}</h2>
             </div>
             <span className="phase-pill">{game?.phase ?? 'setup'}</span>
           </div>
