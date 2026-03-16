@@ -47,6 +47,20 @@ function App() {
       zoom: 1.2,
     })
 
+    map.on('load', function () {
+      var borders = ['admin-0-boundary', 'admin-1-boundary', 'admin-0-boundary-disputed', 'admin-0-boundary-bg'];
+      map.setLayoutProperty('place-city-label', 'visibility', 'none'); 
+      borders.forEach(function(border) {
+          map.setLayoutProperty(border, 'visibility', 'none');
+      });
+      map.getStyle().layers.forEach(function(layer) {
+        if (layer.type === 'symbol') {
+            map.setLayoutProperty(layer.id, 'visibility', 'none');
+        }
+    });
+    });
+
+
     map.addControl(new mapboxgl.NavigationControl(), 'top-right')
     map.on('click', (event) => {
       if (game?.phase !== 'playing') {
@@ -179,10 +193,9 @@ function App() {
       <section className="hero-panel">
         <div>
           <p className="eyebrow">JUGGuesser</p>
-          <h1>Battle to place the closest pin.</h1>
+          <h1>JUG Location Guesser</h1>
           <p className="subtitle">
-            Two local players, one image, one map. Win rounds on accuracy and track
-            total distance over the whole game.
+            Two <s>idiots</s> Java DevRels show off their JUG and geographic knowledge.
           </p>
         </div>
 
